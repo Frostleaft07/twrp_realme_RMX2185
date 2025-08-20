@@ -1,1 +1,2 @@
 ro.product.product.device=RMX2185
+ro.boot.dynamic_partitions=true
