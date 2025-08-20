@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_DEVICE := RMX2185
-PRODUCT_NAME := twrp_RMX2185
+PRODUCT_NAME := ofox_RMX2185
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2185
 PRODUCT_MANUFACTURER := realme
@@ -41,3 +41,10 @@ PRODUCT_PACKAGES += \
 # Set build date to Jan 1 2009 00:00:00
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.date.utc=1230768000
+
+FOX_USE_TAR_BINARY := 1
+OF_MAINTAINER := Frostleaft07
+OF_SUPPORT_OZIP_DECRYPTION := 1
+FOX_USE_BUSYBOX_BINARY := 1
+FOX_USE_XZ_UTILS := 1
+FOX_VARIANT := endfield
