@@ -4,3 +4,8 @@ vendor                                             /vendor      ext4    ro      
 
 /dev/block/platform/bootdevice/by-name/userdata    /data        ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,errors=panic,inlinecrypt    latemount,wait,check,quota,reservedsize=128M,formattable,resize,checkpoint=block,fileencryption=aes-256-xts:aes-256-cts:v1
 /dev/block/platform/bootdevice/by-name/para        /misc        emmc    defaults                                                                 defaults
+
+# biar support install gsi
+/system_image     emmc     /dev/block/mapper/system     flags=backup=0;flashimg=1;display="System image"
+/vendor_image     emmc     /dev/block/mapper/vendor     flags=backup=0;flashimg=1;display="Vendor image"
+
